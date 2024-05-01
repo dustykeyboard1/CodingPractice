@@ -38,12 +38,8 @@ class Stack:
 
     def add(self, data):
         new = Node(data)
-        if self.head != None:
-            old = self.head
-            self.head = new
-            self.head.next = old
-        else:
-            self.head = new
+        new.next = self.head
+        self.head = new
 
     def remove(self):
         if self.head != None:
