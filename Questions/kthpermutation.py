@@ -18,7 +18,7 @@ def kth_permuation(n, k):
 
 
 def main():
-    print(kth_permuation(123456789, 16))
+    print(kth_permuation(4, 16))
 
 
 if __name__ == "__main__":

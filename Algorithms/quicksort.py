@@ -33,7 +33,6 @@ def partition(array, left, right):
 
 def quicksort(array, left, right):
     if left < right:
-        pivot_index = choosePivot(array, left, right)
         new_pivot_index = partition(array, left, right)
         quicksort(array, left, new_pivot_index - 1)
         quicksort(array, new_pivot_index + 1, right)
